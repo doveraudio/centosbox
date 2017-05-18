@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   # config.vm.network "public_network"
     config.vm.synced_folder "./data", "/var/data", :mount_options => ["dmode=777", "fmode=666"], type: "virtualbox"
   #  config.vm.synced_folder ".", "/home/vagrant/sync", type: "virtualbox" 
-     config.vm.synced_folder ".", "/vagrant", type: "virtualbox" 
+  #  config.vm.synced_folder ".", "/vagrant", type: "virtualbox" 
   #  config.vm.synced_folder ".", "/vagrant", disabled: true
   # Virtualbox configuring:
     config.vm.provider "virtualbox" do |vb|
