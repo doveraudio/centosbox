@@ -11,11 +11,12 @@ printf "Installing development tools";
 ##sudo yum groups mark install "Development Tools";
 ##sudo yum -y group install "Development Tools";
 ##sudo yum groupinstall "Additional Development";
-sudo yum install -y openssl-devel;
+###sudo yum install -y openssl-devel mariadb-devel redis libselinux-python mysql-devel mysql-libs libXrender libXext xorg-x11-fonts-75dpi xorg-x11-fonts-Type1 libjpeg-devel zlib-devel libzip-devel freetype-devel lcms2-devel libwebp-devel libtiff-devel tcl-devel tk-devel openldap-devel;
+sudo yum install -y openssl-devel mysql-devel mysql-libs redis libselinux-python libXrender libXext xorg-x11-fonts-75dpi xorg-x11-fonts-Type1 libjpeg-devel zlib-devel libzip-devel freetype-devel lcms2-devel libwebp-devel libtiff-devel tcl-devel tk-devel openldap-devel;
 #check version installed
 printf "Checking gcc version installed";
 gcc --version;
-sudo yum remove OpenJDK;
+sudo yum -y remove OpenJDK;
 
 ### Install wget
 printf "Install wget...\n";
